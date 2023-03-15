@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section class="cart-items">
+        <div class="container">
+		    <h2 class="heading">My Cart</h2>
+		    <!-- Your PHP code to display cart items here -->
+		    <div class="cart-item">
+                <div class="cart-box">
+		    	    <img src="../images/product1.jpg" alt="Product 1">
+		    	    <div class="item-details">
+		    	    	<h3 class="sub-heading">Product 1</h3>
+		    	    	<p class="text">Price: $10.00</p>
+		    	    	<p class="text">Quantity: 1</p>
+		    	    	<button class="btn">Remove</button>
+		    	    </div>
+                </div>
+                <div class="cart-box">
+		    	    <img src="../images/product2.jpg" alt="Product 2">
+		    	    <div class="item-details">
+		    	    	<h3 class="sub-heading">Product 2</h3>
+		    	    	<p class="text">Price: $20.00</p>
+		    	    	<p class="text">Quantity: 2</p>
+		    	    	<button class="btn">Remove</button>
+		    	    </div>
+                </div>
+		    </div>
+        </div>
+		<!-- End of PHP code -->
+	</section>
+
+    <section class="cart-summary" id="cart">
+        <div class="container">
+		    <h2 class="heading">Cart Summary</h2>
+            <div class="summary-box">
+		        <div class="summary-item">
+		        	<p class="text">Subtotal:</p>
+		        	<p class="text">$50.00</p>
+		        </div>
+		        <div class="summary-item">
+		        	<p class="text">Tax:</p>
+		        	<p class="text">$5.00</p>
+		        </div>
+		        <div class="summary-item">
+		        	<p class="text">Shipping:</p>
+		        	<p class="text">$0.00</p>
+		        </div>
+		        <div class="summary-item total">
+		        	<p class="text">Total:</p>
+		        	<p class="text">$55.00</p>
+		        </div>
+		        <button class="btn">Checkout</button>
+            </div>
+        </div>
+	</section>
+</body>
+</html>
