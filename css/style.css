@@ -20,6 +20,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -219,6 +220,7 @@ nav ul li a:hover {
 .btn {
   display: inline-block;
   padding: 0.8rem 2rem;
+  margin-top: 1rem;
   background-color: var(--main-color);
   color: #fff;
   text-decoration: none;
@@ -469,15 +471,19 @@ textarea {
 
 footer {
   padding: 4rem 0;
+  margin-top: 1.5rem;
   background-color: var(--main-color);
 }
+
 footer .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 footer .text {
   color: #fff;
+  text-align: center;
 }
 
 @media (max-width: 1000px) {
@@ -485,9 +491,52 @@ footer .text {
     padding: 0.8rem 1rem;
     font-size: 0.6rem;
   }
+
+  .button-container {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 768px) {
+  .contact .text {
+    word-wrap: break-word;
+  }
+
+  .showcase-area .heading {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 650px) {
+  nav.container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin: 0 5px;
+  }
+
+  .search-box {
+    margin-top: 0.9rem;
+  }
+
+  .search-box input[type="text"],
+  .search-box [type="submit"] {
+    padding: 5px;
+  }
+
+  .showcase-area .container {
+    margin-top: 5rem;
+  }
+
+  .showcase-area .heading {
+    font-size: 2rem;
+  }
+
   .cart-item {
     padding: 0;
   }
@@ -499,10 +548,6 @@ footer .text {
     font-size: 0.9rem;
   }
 
-  .showcase-area .heading {
-    font-size: 2.5rem;
-  }
-
   .button-container .btn {
     padding: 0.8rem;
     font-size: 0.5rem;
@@ -512,5 +557,35 @@ footer .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+  .contact-form .btn {
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .showcase-area .container {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 1rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+
+  .contact-form .btn {
+    padding: 0.8rem;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  footer {
+    padding: 2rem 0;
   }
 }
